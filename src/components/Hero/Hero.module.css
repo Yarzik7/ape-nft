@@ -16,6 +16,7 @@
 .heroTitle {
   margin: 8px 0;
 
+  font-family: "Right Grotesk Compact Black";
   font-weight: 900;
   font-size: 44px;
   line-height: 1;
@@ -24,7 +25,9 @@
 }
 
 .heroSlogan {
+  font-family: "Biro Script Plus Bold US";
   line-height: 1.69;
+  text-transform: none;
   text-align: center;
 }
 
