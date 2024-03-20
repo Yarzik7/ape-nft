@@ -1,0 +1,19 @@
+.heroSection {
+  padding-top: 36px;
+  padding-bottom: 19px;
+
+  border-radius: 20px;
+  background-color: var(--accent-color);
+}
+
+.heroContainer {
+  padding: 0 67px;
+}
+
+.heroTitle {
+  font-size: 44px;
+  line-height: 1;
+  letter-spacing: 0.44px;
+  text-align: center;
+  text-transform: uppercase;
+}
