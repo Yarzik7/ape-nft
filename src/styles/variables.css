@@ -1,6 +1,10 @@
 :root {
+  /* Colors */
   --accent-color: #dc3b5a;
   --primary-text-color: #ffffff;
   --secondary-text-color: #1e1e1e;
   --main-bg-color: #181818;
+
+  /* Sizes */
+  --border-radius: 10px;
 }

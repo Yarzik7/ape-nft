@@ -1,10 +1,11 @@
 .heroSection {
+  min-height: 542px;
   padding-top: 36px;
   padding-bottom: 19px;
 
   color: var(--secondary-text-color);
 
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   background-color: var(--accent-color);
 }
 
@@ -30,4 +31,8 @@
 .heroDescription {
   color: var(--secondary-text-color);
   text-align: center;
+}
+
+.heroImage {
+  margin: 0 auto;
 }
