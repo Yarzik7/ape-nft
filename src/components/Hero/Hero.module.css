@@ -2,6 +2,8 @@
   padding-top: 36px;
   padding-bottom: 19px;
 
+  color: var(--secondary-text-color);
+
   border-radius: 20px;
   background-color: var(--accent-color);
 }
@@ -11,9 +13,21 @@
 }
 
 .heroTitle {
+  margin: 8px 0;
+
+  font-weight: 900;
   font-size: 44px;
   line-height: 1;
   letter-spacing: 0.44px;
   text-align: center;
-  text-transform: uppercase;
+}
+
+.heroSlogan {
+  line-height: 1.69;
+  text-align: center;
+}
+
+.heroDescription {
+  color: var(--secondary-text-color);
+  text-align: center;
 }

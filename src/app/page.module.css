@@ -1,1 +1,6 @@
-
+.main {
+  padding-top: 54px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: var(--main-bg-color);
+}

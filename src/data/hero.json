@@ -1,5 +1,10 @@
 {
   "title": "Yacht apes",
   "slogan": ["diD yOu seE iT ?", "Apes aRe eveRywhere"],
-  "description": "Yacht Ape is a collection of unique digital apes that you can own in NFT format"
+  "description": "Yacht Ape is a collection of unique digital apes that you can own in NFT format",
+  "src": {
+    "mobile": "/images/hero/mobile/chimpanzee-mobile.png",
+    "tablet": "",
+    "desktop": ""
+  }
 }
