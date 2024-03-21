@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.submitButton {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+}
+
+.submitButton:hover {
+  color: var(--secondary-text-color);
+}

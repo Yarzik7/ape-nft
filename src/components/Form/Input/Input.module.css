@@ -1,0 +1,43 @@
+.inputBox {
+  display: flex;
+  height: 48px;
+}
+
+.label {
+  display: block;
+  width: 48px;
+  height: 100%;
+
+  border-top-left-radius: var(--border-radius-btn);
+  border-bottom-left-radius: var(--border-radius-btn);
+  background-color: var(--secondary-text-color);
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  width: 168px;
+  height: 100%;
+  padding-left: 24px;
+
+  font-size: 12px;
+  line-height: 1.67;
+  color: var(--primary-text-color);
+
+  border: 1px solid rgb(30, 30, 30);
+  border-top-right-radius: var(--border-radius-btn);
+  border-bottom-right-radius: var(--border-radius-btn);
+  background-color: transparent;
+
+  transition: border var(--timing-function) var(--transition-duration);
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--placeholder-color);
+  text-transform: uppercase;
+}
+
+.input:focus {
+  border: 1px solid rgba(255, 255, 255, 1);
+}

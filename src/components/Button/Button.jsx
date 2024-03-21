@@ -1,7 +1,7 @@
-import { classNameJoin } from "@/utils";
-import styles from "./Button.module.css";
+import { classNameJoin } from '@/utils';
+import styles from './Button.module.css';
 
-const Button = ({ content = "", buttonAsLink = false, className = "" }) => {
+const Button = ({ content = '', linkAsButton = false, className = '' }) => {
   return (
     <button className={classNameJoin(styles.button, className)}>
       {content}
