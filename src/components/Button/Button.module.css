@@ -7,9 +7,10 @@
 
   font-family: "Right Grotesk Compact Black";
   text-transform: uppercase;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
 
   border: none;
-  background-color: var(--accent-color);
-  border-radius: var(--border-radius);
+  background-color: rgba(30, 30, 30, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: var(--border-radius-btn);
 }

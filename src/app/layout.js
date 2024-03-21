@@ -1,4 +1,5 @@
 import "./globals.css";
+import "modern-normalize/modern-normalize.css";
 
 export const metadata = {
   title: "APE NFT",

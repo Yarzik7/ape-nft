@@ -13,9 +13,12 @@ const Hero = () => {
       className={styles.heroSection}
       containerClassName={styles.heroContainer}
     >
-      <p className={styles.heroSlogan}>{slogan[0]}</p>
-      <h1 className={styles.heroTitle}>{title}</h1>
-      <p className={styles.heroSlogan}>{slogan[1]}</p>
+      <div>
+        <p className={styles.heroSlogan}>{slogan[0]}</p>
+        <h1 className={styles.heroTitle}>{title}</h1>
+        <p className={styles.heroSlogan}>{slogan[1]}</p>
+      </div>
+
       <Image
         src={src.mobile}
         alt="chimpanzee"
@@ -23,8 +26,11 @@ const Hero = () => {
         height={284}
         className={styles.heroImage}
       />
-      <Button caption={buttonCaption} />
-      <Text text={description} className={styles.heroDescription} />
+
+      <div className={styles.heroDescriptionBox}>
+        <Button content={buttonCaption} className={styles.meetApesButton} />
+        <Text text={description} className={styles.heroDescription} />
+      </div>
     </Section>
   );
 };

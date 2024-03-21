@@ -1,5 +1,7 @@
 .heroSection {
-  min-height: 542px;
+  position: relative;
+
+  height: 542px;
   padding-top: 36px;
   padding-bottom: 19px;
 
@@ -10,12 +12,12 @@
 }
 
 .heroContainer {
-  padding: 0 67px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .heroTitle {
-  margin: 8px 0;
-
   font-family: "Right Grotesk Compact Black";
   font-weight: 900;
   font-size: 44px;
@@ -31,11 +33,30 @@
   text-align: center;
 }
 
+.heroDescriptionBox {
+  margin-top: auto;
+}
+
 .heroDescription {
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--secondary-text-color);
   text-align: center;
 }
 
 .heroImage {
-  margin: 0 auto;
+  position: absolute;
+  top: 148px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.meetApesButton {
+  margin-bottom: 12px;
+
+  transition: color var(--timing-function) var(--transition-duration);
+}
+
+.meetApesButton:hover {
+  color: var(--primary-text-color);
 }
