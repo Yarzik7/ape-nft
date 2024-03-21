@@ -38,21 +38,29 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 124px;
-    /* left: 72px; */
+
+    width: calc(100% - 30px);
   }
 
   @media screen and (min-width: 1280px) {
     top: 197px;
-    /* left: 195px; */
   }
 }
 
 .heroTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
   font-family: 'Right Grotesk Compact Black';
   font-weight: 900;
   font-size: 44px;
   line-height: 1;
   letter-spacing: 0.44px;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 2px;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 92px;
@@ -179,6 +187,13 @@
 
 .meetApesButton {
   transition: color var(--timing-function) var(--transition-duration);
+
+  @media screen and (min-width: 1280px) {
+    height: 70px;
+
+    font-size: 28px;
+    line-height: 1.21;
+  }
 }
 
 .meetApesButton:hover {

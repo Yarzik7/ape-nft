@@ -16,7 +16,12 @@ const Hero = () => {
     >
       <div className={styles.heroTitleBox}>
         <p className={styles.heroSlogan}>{slogan[0]}</p>
-        <h1 className={styles.heroTitle}>{title}</h1>
+        <h1 className={styles.heroTitle}>
+          <p>{title[0]}</p>
+          <p>{title[1]}</p>
+          {/* {title[0]}
+          {title[1]} */}
+        </h1>
         <p
           className={classNameJoin(
             styles.heroSlogan,
