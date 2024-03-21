@@ -1,7 +1,6 @@
 .heroSection {
   position: relative;
 
-  height: 542px;
   padding-top: 36px;
   padding-bottom: 19px;
 
@@ -9,32 +8,78 @@
 
   border-radius: var(--border-radius);
   background-color: var(--accent-color);
+
+  @media screen and (max-width: 767px) {
+    height: 542px;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-height: 421px;
+  }
 }
 
 .heroContainer {
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  /* @media screen and (min-width: 360px) {
+    max-width: 344px;
+  } */
+}
+
+.heroTitleBox {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 124px;
+    left: 72px;
+  }
 }
 
 .heroTitle {
-  font-family: "Right Grotesk Compact Black";
+  font-family: 'Right Grotesk Compact Black';
   font-weight: 900;
   font-size: 44px;
   line-height: 1;
   letter-spacing: 0.44px;
-  text-align: center;
+  /* text-align: center; */
+
+  @media screen and (min-width: 768px) {
+    font-family: 'Right Grotesk Compact Black';
+    font-size: 92px;
+  }
 }
 
 .heroSlogan {
-  font-family: "Biro Script Plus Bold US";
+  font-family: 'Biro Script Plus Bold US';
   line-height: 1.69;
   text-transform: none;
-  text-align: center;
+  /* text-align: center; */
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .heroDescriptionBox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   margin-top: auto;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    right: 72px;
+    bottom: 35px;
+
+    flex-direction: column-reverse;
+    gap: 16px;
+    width: 190px;
+  }
 }
 
 .heroDescription {
@@ -42,6 +87,10 @@
   line-height: 1.16;
   color: var(--secondary-text-color);
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: justify;
+  }
 }
 
 .heroImage {
@@ -49,11 +98,15 @@
   top: 148px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media screen and (min-width: 768px) {
+    top: 35px;
+    left: 206px;
+    transform: translateX(0);
+  }
 }
 
 .meetApesButton {
-  margin-bottom: 12px;
-
   transition: color var(--timing-function) var(--transition-duration);
 }
 

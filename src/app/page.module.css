@@ -3,4 +3,13 @@
   padding-left: 8px;
   padding-right: 8px;
   background-color: var(--main-bg-color);
+
+  @media screen and (min-width: 768px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 16px;
+  }
 }
