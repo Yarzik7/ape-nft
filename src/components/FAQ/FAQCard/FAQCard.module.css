@@ -4,7 +4,22 @@
   padding: 8px;
 
   border-radius: var(--border-radius);
-  background-color: var(--secondary-text-color);
+  /* background-color: var(--secondary-text-color); */
+
+  cursor: pointer;
+  outline: none;
+}
+
+.FAQCardItem:hover .questionNumber,
+.FAQCardItem:focus .questionNumber,
+.FAQCardItem.active .questionNumber {
+  color: var(--primary-text-color);
+}
+
+.FAQCardItem:hover .FAQCardQuestion,
+.FAQCardItem:focus .FAQCardQuestion,
+.FAQCardItem.active .FAQCardQuestion {
+  color: var(--accent-color);
 }
 
 .FAQCardQuestionBox {
@@ -26,6 +41,11 @@
   margin-bottom: 10px;
   font-family: 'Right Grotesk Compact Black';
   font-size: 20px;
+}
+
+.questionNumber,
+.FAQCardQuestion {
+  transition: color var(--timing-function) var(--transition-duration);
 }
 
 .FAQCardAnswer {
