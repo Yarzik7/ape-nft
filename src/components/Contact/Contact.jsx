@@ -12,11 +12,13 @@ const Contact = () => {
   return (
     <Section>
       <Title title={title} className={styles.contactTitle} />
-      <Text text={invitationText} className={styles.invitationText} />
-      <Form buttonCaption="Mint">
-        <Input placeholder="@username" />
-        <Input placeholder="Wallet address" />
-      </Form>
+      <div className={styles.contactContentBox}>
+        <Text text={invitationText} className={styles.invitationText} />
+        <Form buttonCaption="Mint">
+          <Input placeholder="@username" />
+          <Input placeholder="Wallet address" />
+        </Form>
+      </div>
     </Section>
   );
 };

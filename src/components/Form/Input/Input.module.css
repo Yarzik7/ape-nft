@@ -1,6 +1,10 @@
 .inputBox {
   display: flex;
   height: 48px;
+
+  @media screen and (min-width: 1280px) {
+    height: 64px;
+  }
 }
 
 .label {
@@ -11,6 +15,10 @@
   border-top-left-radius: var(--border-radius-btn);
   border-bottom-left-radius: var(--border-radius-btn);
   background-color: var(--secondary-text-color);
+
+  @media screen and (min-width: 1280px) {
+    width: 64px;
+  }
 }
 
 .input {
@@ -31,6 +39,17 @@
 
   transition: border var(--timing-function) var(--transition-duration);
   outline: none;
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 333px;
+
+    font-size: 16px;
+    line-height: 1.19;
+  }
 }
 
 .input::placeholder {

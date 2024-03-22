@@ -1,9 +1,40 @@
+.contactContentBox {
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 397px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 581px;
+  }
+}
+
 .invitationText {
   margin-bottom: 16px;
 
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+
+    font-size: 24px;
+    line-height: 1.21;
+  }
 }
 
 .contactTitle {
   margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+  }
 }
