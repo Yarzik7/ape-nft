@@ -1,0 +1,34 @@
+.FAQCardItem {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-text-color);
+}
+
+.FAQCardQuestionBox {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.questionNumber {
+  height: 100%;
+  font-family: 'Biro Script Plus Bold US';
+  font-size: 12px;
+  line-height: 1.66;
+  letter-spacing: 4px;
+  color: var(--accent-color);
+}
+
+.FAQCardQuestion {
+  margin-bottom: 10px;
+  font-family: 'Right Grotesk Compact Black';
+  font-size: 20px;
+}
+
+.FAQCardAnswer {
+  font-size: 12px;
+  line-height: 1.66;
+}

@@ -1,0 +1,9 @@
+.sliderButton {
+  font-family: 'Biro Script Plus Bold US';
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--primary-text-color);
+
+  background-color: transparent;
+  border: none;
+}
