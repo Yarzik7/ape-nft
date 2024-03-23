@@ -25,20 +25,6 @@ const FAQ = () => {
             info={question}
           />
         ))}
-        {/* <FAQCard
-          key="0"
-          questionNumber={0}
-          activeQuestion={activeQuestion}
-          setActiveQuestion={setActiveQuestion}
-          info={questions[0]}
-        />
-        <FAQCard
-          key="1"
-          questionNumber={1}
-          activeQuestion={activeQuestion}
-          setActiveQuestion={setActiveQuestion}
-          info={questions[1]}
-        /> */}
       </ul>
     </Section>
   );

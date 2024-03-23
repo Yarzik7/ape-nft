@@ -5,13 +5,13 @@ const CollectionCard = ({ src }) => {
   return (
     <li className={styles.collectionCardItem}>
       <div className={styles.collectionImageBox}>
-        <Image
+        {/* <Image
           src={src}
           alt="chimpanzee"
           width={216}
           height={256}
           className={styles.collectionImage}
-        />
+        /> */}
       </div>
     </li>
   );

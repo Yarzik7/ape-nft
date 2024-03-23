@@ -13,6 +13,7 @@ const FAQCard = ({ questionNumber, activeQuestion, setActiveQuestion, info: { qu
       tabIndex={0}
       onClick={onSetActiveQuestion}
     >
+      {isActive && <div className={styles.questionCardImageBox}></div>}
       <p className={styles.questionNumber}>{`[${questionNumber + 1}]`}</p>
       <div>
         <h3 className={styles.FAQCardQuestion}>{question}</h3>
