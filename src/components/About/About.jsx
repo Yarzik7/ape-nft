@@ -10,12 +10,12 @@ const About = () => {
   return (
     <Section>
       <div className={styles.aboutTitleBlock}>
-        <p className={styles.aboutTitle}>
+        <h2 className={styles.aboutTitle}>
           {title[0]}
           <span className={styles.aboutTitleAccent}>{title[1]}</span>
           {/* <br /> */}
           <span className={styles.aboutTitleAccent}>{title[2]}</span>
-        </p>
+        </h2>
         <Text text={text[0]} className={styles.aboutTextInTitleBlock} />
       </div>
       <div className={styles.aboutImageBlock}>

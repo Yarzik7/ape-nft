@@ -1,0 +1,21 @@
+.mindMapCardItem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 242px;
+  padding: 24px 12px;
+
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-text-color);
+}
+
+.stageCaption {
+  margin-top: auto;
+  font-family: 'Right Grotesk Compact Black';
+  font-size: 32px;
+}
+
+.stageDescription {
+  font-size: 12px;
+  line-height: 1.17;
+}

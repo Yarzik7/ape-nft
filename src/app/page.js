@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero/Hero';
 import About from '@/components/About/About';
+import MindMap from '@/components/MindMap/MindMap';
 import FAQ from '@/components/FAQ/FAQ';
 import Collection from '@/components/Collection/Collection';
 import Contact from '@/components/Contact/Contact';
@@ -11,6 +12,7 @@ export default function Home() {
     <main className={styles.main}>
       <Hero />
       <About />
+      <MindMap />
       <FAQ />
       <Collection />
       <Contact />

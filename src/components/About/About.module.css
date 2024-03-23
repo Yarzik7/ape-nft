@@ -52,10 +52,12 @@
 
   @media screen and (min-width: 768px) {
     width: 275px;
+    padding-top: 14px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 409px;
+    padding-top: 30px;
 
     font-size: 24px;
     line-height: 1.2;

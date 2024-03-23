@@ -1,7 +1,7 @@
 import Section from '../Section/Section';
 import Title from '../Title/Title';
 import CollectionCard from './CollectionCard/CollectionCard';
-import SliderButton from '../SliderButton/SliderButton';
+import SliderControls from '../SliderControls/SliderControls';
 import styles from './Collection.module.css';
 
 import collectionData from '../../data/collection.json';
@@ -15,10 +15,7 @@ const Collection = () => {
       <ul className={styles.collectionList}>
         <CollectionCard key="0" />
       </ul>
-      <div className={styles.sliderButtonsBox}>
-        <SliderButton caption="Prev" />
-        <SliderButton caption="Next" />
-      </div>
+      <SliderControls />
     </Section>
   );
 };
