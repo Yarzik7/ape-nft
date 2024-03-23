@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero/Hero';
+import About from '@/components/About/About';
 import FAQ from '@/components/FAQ/FAQ';
 import Collection from '@/components/Collection/Collection';
 import Contact from '@/components/Contact/Contact';
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Hero />
+      <About />
       <FAQ />
       <Collection />
       <Contact />
