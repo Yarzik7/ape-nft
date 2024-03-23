@@ -16,7 +16,16 @@ const FAQ = () => {
     <Section>
       <Title title={title} />
       <ul>
-        <FAQCard
+        {questions.map((question, idx) => (
+          <FAQCard
+            key={idx}
+            questionNumber={idx}
+            activeQuestion={activeQuestion}
+            setActiveQuestion={setActiveQuestion}
+            info={question}
+          />
+        ))}
+        {/* <FAQCard
           key="0"
           questionNumber={0}
           activeQuestion={activeQuestion}
@@ -29,7 +38,7 @@ const FAQ = () => {
           activeQuestion={activeQuestion}
           setActiveQuestion={setActiveQuestion}
           info={questions[1]}
-        />
+        /> */}
       </ul>
     </Section>
   );

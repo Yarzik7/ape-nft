@@ -4,10 +4,13 @@
   padding: 8px;
 
   border-radius: var(--border-radius);
-  /* background-color: var(--secondary-text-color); */
 
   cursor: pointer;
   outline: none;
+}
+
+.FAQCardItem.active {
+  background-color: var(--secondary-text-color);
 }
 
 .FAQCardItem:hover .questionNumber,
