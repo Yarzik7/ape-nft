@@ -1,0 +1,24 @@
+.creepingLineBox {
+  height: 52px;
+
+  font-family: 'Right Grotesk Compact Black';
+  font-size: 36px;
+
+  background-color: var(--accent-color);
+
+  @media screen and (min-width: 1280px) {
+    height: 86px;
+    font-size: 64px;
+  }
+}
+
+.creepingLineList {
+  display: flex;
+  gap: 24px;
+  height: 100%;
+  overflow: hidden;
+
+  @media screen and (min-width: 1280px) {
+    gap: 36px;
+  }
+}

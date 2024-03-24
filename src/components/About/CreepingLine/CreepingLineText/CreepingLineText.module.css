@@ -1,0 +1,19 @@
+.creepingLineItem {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+
+  @media screen and (min-width: 1280px) {
+    gap: 36px;
+  }
+}
+
+.creepingLineText {
+  text-wrap: nowrap;
+}
+
+.crossIconInCreepingLine {
+  width: 36px;
+  height: 36px;
+}
