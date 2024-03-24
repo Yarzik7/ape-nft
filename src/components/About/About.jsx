@@ -19,7 +19,10 @@ const About = () => {
         <Text text={text[0]} className={styles.aboutTextInTitleBlock} />
       </div>
       <div className={styles.aboutImageBlock}>
-        <Text text={text[1]} className={styles.aboutTextInImageBlock} />
+        <div className={styles.aboutTextInImageBlock}>
+          <Text text={text[1]} withCrossIcon crossIconClasses={styles.crossIconInImageBlock} />
+        </div>
+
         <div className={styles.aboutImageBox}>
           <Image src={src.mobile} alt="ape" width={216} height={292} className={styles.aboutImage} />
         </div>

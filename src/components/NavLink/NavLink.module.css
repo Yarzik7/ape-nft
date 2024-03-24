@@ -1,0 +1,28 @@
+.navLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+
+  font-family: 'Messina Sans Mono';
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+
+  border: none;
+  border-radius: var(--border-radius-btn);
+  background-color: rgba(30, 30, 30, 0.1);
+  backdrop-filter: blur(12px);
+
+  transition: color var(--timing-function) var(--transition-duration);
+
+  @media screen and (min-width: 1280px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.navLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

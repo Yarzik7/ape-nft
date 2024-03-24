@@ -5,6 +5,7 @@
   --secondary-text-color: #1e1e1e;
   --main-bg-color: #181818;
   --placeholder-color: rgba(255, 255, 255, 0.24);
+  --mobile-menu-link-bg: rgba(255, 255, 255, 0.1);
 
   /* Sizes */
   --border-radius: 12px;

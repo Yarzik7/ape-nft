@@ -6,10 +6,12 @@ import Collection from '@/components/Collection/Collection';
 import Contact from '@/components/Contact/Contact';
 import Footer from '@/components/Footer/Footer';
 import styles from './page.module.css';
+// import MobileMenu from '@/MobileMenu/MobileMenu';
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      {/* <MobileMenu /> */}
       <Hero />
       <About />
       <MindMap />

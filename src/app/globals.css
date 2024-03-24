@@ -16,6 +16,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Messina Sans Mono';
   line-height: 1;
@@ -35,7 +39,3 @@ a {
 button {
   cursor: pointer;
 }
-
-/* .swiper-slide {
-  width: 100% !important;
-} */

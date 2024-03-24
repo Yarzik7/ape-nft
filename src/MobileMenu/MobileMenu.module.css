@@ -1,0 +1,25 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  padding: 62px 16px 24px;
+
+  background-color: var(--main-bg-color);
+
+  @media screen and (min-with: 768px) {
+    display: none;
+  }
+}
+
+.mobileMenuLogo,
+.mobileMenuLink {
+  color: var(--primary-text-color);
+}
+
+.mobileMenuLogo:hover,
+.mobileMenuLink:hover {
+  color: var(--accent-color);
+}
+
+.mobileMenuLink {
+  background-color: var(--mobile-menu-link-bg);
+}

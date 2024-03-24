@@ -1,0 +1,26 @@
+.logoLink {
+  display: block;
+  width: 48px;
+  height: 32px;
+
+  color: var(--secondary-text-color);
+
+  transition: color var(--timing-function) var(--transition-duration);
+}
+
+.logoLink:hover {
+  color: var(--primary-text-color);
+}
+
+.logoLink.mobileMenu {
+  color: var(--primary-text-color);
+}
+
+.logoLink.mobileMenu:hover {
+  color: var(--accent-color);
+}
+
+.logoIcon {
+  width: 100%;
+  height: 100%;
+}

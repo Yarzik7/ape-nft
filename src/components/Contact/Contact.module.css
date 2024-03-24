@@ -38,3 +38,12 @@
     margin-bottom: 80px;
   }
 }
+
+.crossIconInContactBlock {
+  width: 36px;
+  height: 36px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}

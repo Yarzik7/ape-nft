@@ -13,7 +13,10 @@ const Contact = () => {
     <Section>
       <Title title={title} className={styles.contactTitle} />
       <div className={styles.contactContentBox}>
-        <Text text={invitationText} className={styles.invitationText} />
+        <div className={styles.invitationText}>
+          <Text text={invitationText} withCrossIcon crossIconClasses={styles.crossIconInContactBlock} />
+        </div>
+
         <Form buttonCaption="Mint">
           <Input placeholder="@username" />
           <Input placeholder="Wallet address" />
