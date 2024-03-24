@@ -1,0 +1,12 @@
+.collectionList {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 48px;
+  }
+}
+
+.collectionCardItem {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}

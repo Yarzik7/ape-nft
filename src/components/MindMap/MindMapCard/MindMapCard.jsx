@@ -1,11 +1,24 @@
 import styles from './MindMapCard.module.css';
 
-const MindMapCard = ({ stageInfo: { caption, description } }) => {
+const MindMapCard = ({ stageInfo: { caption, description, link } }) => {
+  const Wrapper = ({ children }) =>
+    link ? (
+      <a href={link} className={styles.mindMapCardItem + ' ' + styles.link}>
+        {children}
+      </a>
+    ) : (
+      <div className={styles.mindMapCardItem}>{children}</div>
+    );
+
   return (
-    <div className={styles.mindMapCardItem}>
-      <p className={styles.stageDescription}>{description}</p>
+    <Wrapper>
+      {description ? (
+        <p className={styles.stageDescription}>{description}</p>
+      ) : (
+        <div className={styles.stageArrowIcon}></div>
+      )}
       <h3 className={styles.stageCaption}>{caption}</h3>
-    </div>
+    </Wrapper>
   );
 };
 

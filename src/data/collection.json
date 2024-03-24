@@ -1,3 +1,19 @@
 {
-  "title": "Collection"
+  "title": "Collection",
+  "collection": [
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
+    { "src": "/images/hero/mobile/chimpanzee-mobile.png" }
+  ]
 }

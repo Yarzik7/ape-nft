@@ -1,3 +1,13 @@
 .stagesList {
-  margin-bottom: 24px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 284px 284px;
+    gap: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: 504px 504px;
+  }
 }
