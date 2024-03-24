@@ -1,3 +1,5 @@
 export const classNameJoin = (...classNames) => {
-  return [...classNames].join(" ");
+  let classNamesString = '';
+  classNames.forEach(classItem => (classNamesString += ' ' + classItem));
+  return classNamesString;
 };

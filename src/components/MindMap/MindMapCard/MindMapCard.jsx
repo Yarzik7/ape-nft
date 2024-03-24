@@ -3,7 +3,12 @@ import styles from './MindMapCard.module.css';
 const MindMapCard = ({ stageInfo: { caption, description, link } }) => {
   const Wrapper = ({ children }) =>
     link ? (
-      <a href={link} className={styles.mindMapCardItem + ' ' + styles.link}>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        className={styles.mindMapCardItem + ' ' + styles.link}
+      >
         {children}
       </a>
     ) : (
