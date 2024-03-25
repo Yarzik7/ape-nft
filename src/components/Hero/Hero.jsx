@@ -22,11 +22,13 @@ const Hero = () => {
             </h1>
             <p className={classNameJoin(styles.heroSlogan, styles.heroSloganWithPadding)}>{slogan[1]}</p>
           </div>
+
           <div className={styles.heroImageBox}>
-            <Image src={src.mobile} alt="chimpanzee" width={216} height={284} className={styles.heroImage} />
+            <Image src={src.mobile} alt="ape" width={216} height={284} className={styles.heroImage} />
           </div>
+
           <div className={styles.heroDescriptionBox}>
-            <Button content={buttonCaption} className={styles.meetApesButton} />
+            <Button content={buttonCaption} className={styles.meetApesButton} linkAsButton href="#Mint" />
             <Text text={description} className={styles.heroDescription} />
           </div>
         </Container>

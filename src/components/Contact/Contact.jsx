@@ -10,7 +10,7 @@ const { title, invitationText } = contactData;
 
 const Contact = () => {
   return (
-    <Section>
+    <Section id="Mint">
       <Title title={title} className={styles.contactTitle} />
       <div className={styles.contactContentBox}>
         <div className={styles.invitationText}>

@@ -7,6 +7,12 @@
   color: var(--secondary-text-color);
 
   transition: color var(--timing-function) var(--transition-duration);
+
+  @media screen and (min-width: 1280px) {
+    width: 72px;
+    height: 80px;
+    padding: 15px 0;
+  }
 }
 
 .logoLink:hover {

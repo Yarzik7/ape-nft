@@ -10,18 +10,13 @@ ul {
   list-style: none;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
   padding-top: 54px;
+  padding-bottom: 24px;
 
   font-family: 'Messina Sans Mono';
   line-height: 1;
@@ -29,6 +24,10 @@ body {
   text-transform: uppercase;
 
   background-color: var(--main-bg-color);
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
 
   @media screen and (min-width: 1280px) {
     padding-top: 16px;

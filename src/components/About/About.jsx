@@ -16,7 +16,6 @@ const About = () => {
           <h2 className={styles.aboutTitle}>
             {title[0]}
             <span className={styles.aboutTitleAccent}>{title[1]}</span>
-            {/* <br /> */}
             <span className={styles.aboutTitleAccent}>{title[2]}</span>
           </h2>
           <Text text={text[0]} className={styles.aboutTextInTitleBlock} />
