@@ -1,14 +1,10 @@
-import Logo from '../Logo/Logo';
-import NavLink from '../NavLink/NavLink';
+import HeaderContent from './HeaderContent/HeaderContent';
 import styles from './Header.module.css';
 
-const Header = ({ className = '', buttonClasses, logoClasses }) => {
+const Header = () => {
   return (
-    <header className={styles.header + ' ' + className}>
-      <Logo className={logoClasses} />
-      <NavLink buttonAsLink className={buttonClasses}>
-        Menu
-      </NavLink>
+    <header className={styles.header}>
+      <HeaderContent />
     </header>
   );
 };

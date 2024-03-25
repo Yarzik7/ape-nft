@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './NavLink.module.css';
 
-const NavLink = ({ href, buttonAsLink = false, className = '', children }) => {
+const NavLink = ({ href, buttonAsLink = false, className = '', children, isSocial = false }) => {
   return !buttonAsLink ? (
     <Link href={href} className={styles.navLink + ' ' + className}>
       {children}

@@ -1,3 +1,4 @@
+import Icon from '@/components/Icon/Icon';
 import styles from './MindMapCard.module.css';
 
 const MindMapCard = ({ stageInfo: { caption, description, link } }) => {
@@ -20,7 +21,7 @@ const MindMapCard = ({ stageInfo: { caption, description, link } }) => {
       {description ? (
         <p className={styles.stageDescription}>{description}</p>
       ) : (
-        <div className={styles.stageArrowIcon}></div>
+        <Icon iconName="up-left-arrow" className={styles.stageArrowIcon} width={24} height={24} />
       )}
       <h3 className={styles.stageCaption}>{caption}</h3>
     </Wrapper>

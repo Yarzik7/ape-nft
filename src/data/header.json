@@ -1,0 +1,8 @@
+{
+  "navigation": ["About", "M-map", "FAQ", "Arts", "Mint"],
+  "socials": [
+    { "iconName": "discord", "href": "https://discord.com/" },
+    { "iconName": "opensea", "href": "https://opensea.io/collection/boredapeyachtclub" },
+    { "iconName": "twitter", "href": "https://twitter.com/BoredApeYC" }
+  ]
+}

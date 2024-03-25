@@ -6,8 +6,10 @@
   height: 48px;
 
   font-family: 'Messina Sans Mono';
+  font-weight: 600;
+  font-size: 12px;
   text-transform: uppercase;
-  color: var(--secondary-text-color);
+  color: currentColor;
 
   border: none;
   border-radius: var(--border-radius-btn);
@@ -25,4 +27,5 @@
 .navLink:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
+  color: var(--primary-text-color);
 }
