@@ -8,7 +8,9 @@
 }
 
 .label {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 100%;
 
@@ -19,6 +21,11 @@
   @media screen and (min-width: 1280px) {
     width: 64px;
   }
+}
+
+.labelIcon {
+  width: 24px;
+  height: 24px;
 }
 
 .input {

@@ -1,5 +1,4 @@
 import Icon from '../Icon/Icon';
-import styles from './CrossIcon.module.css';
 
 const CrossIcon = ({ className = '' }) => {
   return (

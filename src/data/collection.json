@@ -1,19 +1,19 @@
 {
   "title": "Collection",
   "collection": [
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" },
-    { "src": "/images/hero/mobile/chimpanzee-mobile.png" }
+    { "src": "/images/collection/ape-collection1.png" },
+    { "src": "/images/collection/ape-collection2.png" },
+    { "src": "/images/collection/ape-collection3.png" },
+    { "src": "/images/collection/ape-collection4.png" },
+    { "src": "/images/collection/ape-collection5.png" },
+    { "src": "/images/collection/ape-collection6.png" },
+    { "src": "/images/collection/ape-collection7.png" },
+    { "src": "/images/collection/ape-collection8.png" },
+    { "src": "/images/collection/ape-collection9.png" },
+    { "src": "/images/collection/ape-collection10.png" },
+    { "src": "/images/collection/ape-collection11.png" },
+    { "src": "/images/collection/ape-collection12.png" },
+    { "src": "/images/collection/ape-collection13.png" },
+    { "src": "/images/collection/ape-collection14.png" }
   ]
 }

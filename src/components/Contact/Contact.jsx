@@ -18,8 +18,8 @@ const Contact = () => {
         </div>
 
         <Form buttonCaption="Mint">
-          <Input placeholder="@username" />
-          <Input placeholder="Wallet address" />
+          <Input label="discord" placeholder="@username" labelClasses={styles.discordLabel} />
+          <Input label="metamask" placeholder="Wallet address" />
         </Form>
       </div>
     </Section>

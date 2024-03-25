@@ -1,9 +1,10 @@
-import "./globals.css";
-import "modern-normalize/modern-normalize.css";
+import './globals.css';
+import 'modern-normalize/modern-normalize.css';
 
 export const metadata = {
-  title: "APE NFT",
-  description: "APE NFT",
+  title: 'Ape NFT',
+  description: 'Yacht Ape is a collection of unique digital apes that you can own in NFT format',
+  icons: { icon: '/images/favicon.svg' },
 };
 
 export default function RootLayout({ children }) {
