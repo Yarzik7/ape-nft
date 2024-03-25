@@ -9,7 +9,7 @@ const { title, stagesData } = mindMapData;
 
 const MindMap = () => {
   return (
-    <Section>
+    <Section id="M-map">
       <Title title={title} />
       <StagesSlider stagesData={stagesData} />
       <ul className={styles.stagesList}>

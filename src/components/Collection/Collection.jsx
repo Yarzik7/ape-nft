@@ -9,7 +9,7 @@ const { title, collection } = collectionData;
 
 const Collection = () => {
   return (
-    <Section>
+    <Section id="Arts">
       <Title title={title} className={styles.collectionTitle} />
       <CollectionSlider collectionData={collection} />
     </Section>

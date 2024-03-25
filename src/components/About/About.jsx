@@ -10,7 +10,7 @@ const { title, text, src, creepingLine } = aboutData;
 
 const About = () => {
   return (
-    <Section id="about" withoutContainer>
+    <Section id="About" withoutContainer>
       <Container>
         <div className={styles.aboutTitleBlock}>
           <h2 className={styles.aboutTitle}>

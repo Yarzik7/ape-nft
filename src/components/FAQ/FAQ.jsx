@@ -13,7 +13,7 @@ const FAQ = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
 
   return (
-    <Section>
+    <Section id="FAQ">
       <Title title={title} />
       <ul>
         {questions.map((question, idx) => (
