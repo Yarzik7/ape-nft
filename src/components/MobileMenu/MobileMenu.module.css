@@ -1,4 +1,10 @@
 .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   padding: 62px 16px 24px;
@@ -8,6 +14,11 @@
   @media screen and (min-with: 768px) {
     display: none;
   }
+}
+
+.mobileMenuHeaderContentBox {
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 .mobileMenuLogo,
@@ -22,4 +33,8 @@
 
 .mobileMenuLink {
   background-color: var(--mobile-menu-link-bg);
+}
+
+.mobileMenuFooter {
+  margin-top: auto;
 }

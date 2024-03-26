@@ -6,9 +6,9 @@ import styles from './HeaderContent.module.css';
 import headerData from '../../../data/header.json';
 const { socials } = headerData;
 
-const HeaderContent = ({ buttonClasses, logoClasses }) => {
+const HeaderContent = ({ className, buttonClasses, logoClasses }) => {
   return (
-    <div className={styles.headerContentContainer}>
+    <div className={styles.headerContentContainer + (className ? ' ' + className : '')}>
       <Logo className={logoClasses} />
       <ul className={styles.menu}>
         <li key={0} className={styles.menuItem}>

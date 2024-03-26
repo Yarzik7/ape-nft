@@ -6,7 +6,7 @@ const { navigation } = navigationData;
 
 const Navigation = () => {
   return (
-    <nav>
+    <nav className={styles.navigationBox}>
       <ul>
         {navigation.map((navItem, idx) => (
           <NavItem key={idx} caption={navItem} href="#" />

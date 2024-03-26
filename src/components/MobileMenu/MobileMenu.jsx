@@ -7,9 +7,13 @@ import styles from './MobileMenu.module.css';
 const MobileMenu = () => {
   return (
     <div className={styles.backdrop}>
-      <HeaderContent buttonClasses={styles.mobileMenuLink} logoClasses={styles.mobileMenuLogo} />
+      <HeaderContent
+        className={styles.mobileMenuHeaderContentBox}
+        buttonClasses={styles.mobileMenuLink}
+        logoClasses={styles.mobileMenuLogo}
+      />
       <Navigation />
-      <Footer />
+      <Footer className={styles.mobileMenuFooter} />
     </div>
   );
 };

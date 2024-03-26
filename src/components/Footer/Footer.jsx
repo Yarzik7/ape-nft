@@ -4,9 +4,9 @@ import styles from './Footer.module.css';
 import footerData from '../../data/footer.json';
 const { copyright } = footerData;
 
-const Footer = () => {
+const Footer = ({className}) => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer + (className ? " "+className:"")}>
       <Container>
         <p className={styles.copyright}>{`${
           copyright[0]

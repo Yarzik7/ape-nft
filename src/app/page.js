@@ -6,13 +6,11 @@ import FAQ from '@/components/FAQ/FAQ';
 import Collection from '@/components/Collection/Collection';
 import Contact from '@/components/Contact/Contact';
 import Footer from '@/components/Footer/Footer';
-import MobileMenu from '@/components/MobileMenu/MobileMenu';
 
 export default function Home() {
   return (
     <>
-      <MobileMenu />
-      {/* <Header />
+      <Header />
       <main>
         <Hero />
         <About />
@@ -21,7 +19,7 @@ export default function Home() {
         <Collection />
         <Contact />
       </main>
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
