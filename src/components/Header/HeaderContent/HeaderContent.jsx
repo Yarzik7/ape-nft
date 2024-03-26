@@ -4,19 +4,21 @@ import Icon from '@/components/Icon/Icon';
 import styles from './HeaderContent.module.css';
 
 import headerData from '../../../data/header.json';
-const { navigation, socials } = headerData;
+const { socials } = headerData;
 
-const HeaderContent = () => {
+const HeaderContent = ({ buttonClasses, logoClasses }) => {
   return (
     <div className={styles.headerContentContainer}>
-      <Logo />
+      <Logo className={logoClasses} />
       <ul className={styles.menu}>
         <li key={0} className={styles.menuItem}>
-          <NavLink buttonAsLink>Menu</NavLink>
+          <NavLink buttonAsLink className={buttonClasses}>
+            Menu
+          </NavLink>
         </li>
         {socials.map(({ iconName, href }, idx) => (
           <li key={idx + 1} className={styles.menuItem}>
-            <NavLink href={href}>
+            <NavLink href={href} className={buttonClasses}>
               <Icon iconName={iconName} width={16} height={16} className={styles.socialIcon} />
             </NavLink>
           </li>
