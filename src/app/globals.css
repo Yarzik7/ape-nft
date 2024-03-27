@@ -34,6 +34,10 @@ body {
   }
 }
 
+body.is-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
 }

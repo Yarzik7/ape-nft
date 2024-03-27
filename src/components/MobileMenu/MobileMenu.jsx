@@ -27,7 +27,7 @@ const MobileMenu = ({ showMenu, toggleShowMenu }) => {
         showMenu={showMenu}
         toggleShowMenu={toggleShowMenu}
       />
-      <Navigation />
+      <Navigation onClose={toggleShowMenu} />
       <Footer className={styles.mobileMenuFooter} />
     </div>,
     modalRoot

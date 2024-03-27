@@ -7,7 +7,11 @@ import styles from './Header.module.css';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const toggleShowMenu = () => setShowMenu(!showMenu);
+
+  const toggleShowMenu = () => {
+    setShowMenu(!showMenu);
+    document.body.classList.toggle('is-open');
+  };
 
   return (
     <header className={styles.header}>
