@@ -3,7 +3,7 @@ import styles from './NavLink.module.css';
 
 const NavLink = ({ href, buttonAsLink = false, className = '', children, isSocial = false, onClick }) => {
   return !buttonAsLink ? (
-    <Link href={href} className={styles.navLink + ' ' + className}>
+    <Link href={href} target="_blank" rel="noopener noreferrer nofollow" className={styles.navLink + ' ' + className}>
       {children}
     </Link>
   ) : (

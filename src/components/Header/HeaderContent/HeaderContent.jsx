@@ -3,21 +3,16 @@
 import Logo from '@/components/Logo/Logo';
 import NavLink from '@/components/NavLink/NavLink';
 import Icon from '@/components/Icon/Icon';
-// import MobileMenu from '@/components/MobileMenu/MobileMenu';
-// import { useState } from 'react';
 import styles from './HeaderContent.module.css';
 
 import headerData from '../../../data/header.json';
 const { socials } = headerData;
 
-const HeaderContent = ({ className, buttonClasses, logoClasses, showMenu, toggleShowMenu }) => {
-  // const [showMenu, setShowMenu] = useState(false);
-  // const toggleShowMenu = () => setShowMenu(!showMenu);
-
+const HeaderContent = ({ className, buttonClasses, socialsMenuClasses, logoClasses, showMenu, toggleShowMenu }) => {
   return (
     <div className={styles.headerContentContainer + (className ? ' ' + className : '')}>
       <Logo className={logoClasses} />
-      <ul className={styles.menu}>
+      <ul className={styles.menu + (socialsMenuClasses ? ' ' + socialsMenuClasses : '')}>
         <li key={0} className={styles.menuItem}>
           <NavLink buttonAsLink className={buttonClasses} onClick={toggleShowMenu}>
             {showMenu ? 'Close' : 'Menu'}
@@ -31,7 +26,6 @@ const HeaderContent = ({ className, buttonClasses, logoClasses, showMenu, toggle
           </li>
         ))}
       </ul>
-      {/* {showMenu && <MobileMenu />} */}
     </div>
   );
 };

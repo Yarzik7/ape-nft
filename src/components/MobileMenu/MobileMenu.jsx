@@ -24,6 +24,7 @@ const MobileMenu = ({ showMenu, toggleShowMenu }) => {
         className={styles.mobileMenuHeaderContentBox}
         buttonClasses={styles.mobileMenuLink}
         logoClasses={styles.mobileMenuLogo}
+        socialsMenuClasses={styles.mobileMenuSocialsMenu}
         showMenu={showMenu}
         toggleShowMenu={toggleShowMenu}
       />
