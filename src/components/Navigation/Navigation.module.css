@@ -1,4 +1,6 @@
 .navigationBox {
-  width: 121px;
-  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    width: 121px;
+    margin: 0 auto;
+  }
 }

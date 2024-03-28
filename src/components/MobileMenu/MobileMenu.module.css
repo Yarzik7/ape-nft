@@ -11,13 +11,12 @@
 
   background-color: var(--main-bg-color);
 
-  @media screen and (min-with: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
 .mobileMenuHeaderContentBox {
-  /* margin: 0; */
   margin-bottom: 28px;
   padding: 0;
 }

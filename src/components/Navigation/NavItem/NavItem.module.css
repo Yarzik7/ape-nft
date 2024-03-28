@@ -1,15 +1,42 @@
 .navItem:not(:last-child) {
-  margin-bottom: 27px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 27px;
+  }
 }
 
 .navLink {
-  display: block;
+  transition: color var(--timing-function) var(--transition-duration);
 
-  font-family: 'Messina Sans Mono';
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.2;
-  text-align: center;
-  /* text-transform: uppercase; */
-  color: var(--primary-text-color);
+  @media screen and (max-width: 767px) {
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--primary-text-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+
+    font-family: 'Messina Sans Mono';
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: currentColor;
+
+    border: none;
+    /* border-radius: var(--border-radius-btn); */
+    background-color: rgba(30, 30, 30, 0.1);
+    backdrop-filter: blur(12px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 80px;
+    height: 80px;
+  }
 }
