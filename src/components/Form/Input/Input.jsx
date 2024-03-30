@@ -2,7 +2,7 @@ import Icon from '@/components/Icon/Icon';
 import { useId } from 'react';
 import styles from './Input.module.css';
 
-const Input = ({ label, placeholder, labelClasses }) => {
+const Input = ({ name, label, placeholder, labelClasses, register = {} }) => {
   const inputId = useId();
 
   return (
@@ -10,7 +10,7 @@ const Input = ({ label, placeholder, labelClasses }) => {
       <label htmlFor={inputId} className={styles.label + ' ' + labelClasses}>
         <Icon iconName={label} width={24} height={24} className={styles.labelIcon} />
       </label>
-      <input id={inputId} className={styles.input} placeholder={placeholder} />
+      <input id={inputId} name={name} className={styles.input} placeholder={placeholder} {...register} />
     </div>
   );
 };

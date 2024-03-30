@@ -32,8 +32,17 @@ const Contact = () => {
         </div>
 
         <Form buttonCaption="Mint" onSubmit={handleSubmit(onSubmit)}>
-          <Input label="discord" placeholder="@username" labelClasses={styles.discordLabel} />
-          <Input label="metamask" placeholder="Wallet address" />
+          <Input
+            label="discord"
+            placeholder="@username"
+            labelClasses={styles.discordLabel}
+            register={{ ...register('discord', { required: true, maxLength: 2 }) }}
+          />
+          <Input
+            label="metamask"
+            placeholder="Wallet address"
+            register={{ ...register('metamask', { required: true, minLength: 19, maxLength: 19 }) }}
+          />
         </Form>
       </div>
     </Section>
