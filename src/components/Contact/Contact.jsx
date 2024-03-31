@@ -15,13 +15,14 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
-  } = useForm();
+  } = useForm({ mode: 'onTouched' });
 
   const onSubmit = () => {
     console.log('onSubmit');
   };
+
+  console.log(errors);
 
   return (
     <Section id="Mint">
@@ -34,14 +35,27 @@ const Contact = () => {
         <Form buttonCaption="Mint" onSubmit={handleSubmit(onSubmit)}>
           <Input
             label="discord"
+            name="discord"
             placeholder="@username"
             labelClasses={styles.discordLabel}
-            register={{ ...register('discord', { required: true, maxLength: 2 }) }}
+            errors={errors}
+            errorMessage="Wrong discord"
+            register={{ ...register('discord', { required: true, minLength: 2, pattern: /^@[A-Za-z0-9]+$/i }) }}
           />
           <Input
             label="metamask"
+            name="metamask"
             placeholder="Wallet address"
-            register={{ ...register('metamask', { required: true, minLength: 19, maxLength: 19 }) }}
+            errors={errors}
+            errorMessage="Wrong address"
+            register={{
+              ...register('metamask', {
+                required: true,
+                minLength: 42,
+                maxLength: 42,
+                pattern: /^[0-9][Xx][A-Za-z0-9]+$/i,
+              }),
+            }}
           />
         </Form>
       </div>

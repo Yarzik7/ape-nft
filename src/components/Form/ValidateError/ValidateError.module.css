@@ -1,0 +1,14 @@
+.validateError {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 2px);
+
+  width: 100%;
+  margin-top: 2px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  text-align: right;
+
+  color: var(--accent-color);
+}
