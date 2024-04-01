@@ -6,23 +6,27 @@ import Text from '../Text/Text';
 import Form from '../Form/Form';
 import Input from '../Form/Input/Input';
 import { useForm } from 'react-hook-form';
+import { useState } from 'react';
 import styles from './Contact.module.css';
 
 import contactData from '../../data/contact.json';
 const { title, invitationText } = contactData;
 
 const Contact = () => {
+  const [submitStatus, setSubmitStatus] = useState('Mint');
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({ mode: 'onTouched' });
+  } = useForm({ mode: 'onTouched', values: { discord: '', metamask: '' } });
 
   const onSubmit = () => {
-    console.log('onSubmit');
+    setSubmitStatus('Minted');
   };
 
-  console.log(errors);
+  const onError = () => {
+    setSubmitStatus('Error');
+  };
 
   return (
     <Section id="Mint">
@@ -32,28 +36,32 @@ const Contact = () => {
           <Text text={invitationText} withCrossIcon crossIconClasses={styles.crossIconInContactBlock} />
         </div>
 
-        <Form buttonCaption="Mint" onSubmit={handleSubmit(onSubmit)}>
+        <Form buttonCaption={submitStatus} onSubmit={handleSubmit(onSubmit, onError)}>
           <Input
             label="discord"
             name="discord"
             placeholder="@username"
             labelClasses={styles.discordLabel}
             errors={errors}
-            errorMessage="Wrong discord"
-            register={{ ...register('discord', { required: true, minLength: 2, pattern: /^@[A-Za-z0-9]+$/i }) }}
+            errorMessage={errors.discord?.message}
+            register={{
+              ...register('discord', {
+                required: 'Discord is required',
+                minLength: 2,
+                pattern: { value: /^@[A-Za-z0-9]+$/i, message: 'Wrong discord' },
+              }),
+            }}
           />
           <Input
             label="metamask"
             name="metamask"
             placeholder="Wallet address"
             errors={errors}
-            errorMessage="Wrong address"
+            errorMessage={errors.metamask?.message}
             register={{
               ...register('metamask', {
-                required: true,
-                minLength: 42,
-                maxLength: 42,
-                pattern: /^[0-9][Xx][A-Za-z0-9]+$/i,
+                required: 'Metamask is required',
+                pattern: { value: /^0x[A-Za-z0-9]{5}$/i, message: 'Wrong metamask' },
               }),
             }}
           />
