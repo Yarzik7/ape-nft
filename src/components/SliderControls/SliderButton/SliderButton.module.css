@@ -6,4 +6,10 @@
 
   background-color: transparent;
   border: none;
+
+  transition: color var(--timing-function) var(--transition-duration);
+}
+
+.sliderButton:hover {
+  color: var(--accent-color);
 }
