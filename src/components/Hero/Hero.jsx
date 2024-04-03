@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Button from '../Button/Button';
 import Text from '../Text/Text';
 import { classNameJoin } from '@/utils';
+import { clsx } from 'clsx';
 import styles from './Hero.module.css';
 
 import heroData from '../../data/hero.json';
@@ -29,21 +30,21 @@ const Hero = () => {
               alt="ape"
               width={216}
               height={284}
-              className={styles.heroImage + ' ' + styles.mobile}
+              className={clsx(styles.heroImage, 'mobileImage')}
             />
             <Image
               src={src.tablet}
               alt="ape"
               width={283}
               height={386}
-              className={styles.heroImage + ' ' + styles.tablet}
+              className={clsx(styles.heroImage, 'tabletImage')}
             />
             <Image
               src={src.desktop}
               alt="ape"
               width={463}
               height={612}
-              className={styles.heroImage + ' ' + styles.desktop}
+              className={clsx(styles.heroImage, 'desktopImage')}
             />
           </div>
 

@@ -33,21 +33,21 @@ const About = () => {
               alt="ape"
               width={216}
               height={292}
-              className={clsx(styles.aboutImage, styles.mobile)}
+              className={clsx(styles.heroImage, 'mobileImage')}
             />
             <Image
               src={src.tablet}
               alt="ape"
               width={313}
               height={422}
-              className={clsx(styles.aboutImage, styles.tablet)}
+              className={clsx(styles.heroImage, 'tabletImage')}
             />
             <Image
               src={src.desktop}
               alt="ape"
               width={492}
               height={662}
-              className={clsx(styles.aboutImage, styles.desktop)}
+              className={clsx(styles.heroImage, 'desktopImage')}
             />
           </div>
         </div>

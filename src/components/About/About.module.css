@@ -127,32 +127,6 @@
   object-fit: cover;
 }
 
-.aboutImage.mobile {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.aboutImage.tablet {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
-
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
-}
-
-.aboutImage.desktop {
-  display: none;
-
-  @media screen and (min-width: 1280px) {
-    display: block;
-  }
-}
-
 .crossIconInImageBlock {
   width: 24px;
   height: 24px;

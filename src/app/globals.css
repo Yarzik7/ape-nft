@@ -50,3 +50,31 @@ a {
 button {
   cursor: pointer;
 }
+
+.mobileImage {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.tabletImage {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.desktopImage {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
