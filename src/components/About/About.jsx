@@ -1,5 +1,3 @@
-'use client';
-
 import Section from '../Section/Section';
 import Container from '../Section/Container/Container';
 import Text from '../Text/Text';
