@@ -15,4 +15,5 @@
   /* Other */
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-duration: 350ms;
+  --creeping-line-duration: 10000ms;
 }

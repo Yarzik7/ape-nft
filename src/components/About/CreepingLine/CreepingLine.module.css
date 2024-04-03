@@ -18,7 +18,22 @@
   height: 100%;
   overflow: hidden;
 
+  animation-name: creepingLine;
+  animation-duration: var(--creeping-line-duration);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
   @media screen and (min-width: 1280px) {
     gap: 36px;
+  }
+}
+
+@keyframes creepingLine {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
   }
 }
