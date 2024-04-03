@@ -24,7 +24,27 @@ const Hero = () => {
           </div>
 
           <div className={styles.heroImageBox}>
-            <Image src={src.mobile} alt="ape" width={216} height={284} className={styles.heroImage} />
+            <Image
+              src={src.mobile}
+              alt="ape"
+              width={216}
+              height={284}
+              className={styles.heroImage + ' ' + styles.mobile}
+            />
+            <Image
+              src={src.tablet}
+              alt="ape"
+              width={283}
+              height={386}
+              className={styles.heroImage + ' ' + styles.tablet}
+            />
+            <Image
+              src={src.desktop}
+              alt="ape"
+              width={463}
+              height={612}
+              className={styles.heroImage + ' ' + styles.desktop}
+            />
           </div>
 
           <div className={styles.heroDescriptionBox}>

@@ -27,7 +27,27 @@ const About = () => {
           </div>
 
           <div className={styles.aboutImageBox}>
-            <Image src={src.mobile} alt="ape" width={216} height={292} className={styles.aboutImage} />
+            <Image
+              src={src.mobile}
+              alt="ape"
+              width={216}
+              height={292}
+              className={styles.aboutImage + ' ' + styles.mobile}
+            />
+            <Image
+              src={src.tablet}
+              alt="ape"
+              width={313}
+              height={422}
+              className={styles.aboutImage + ' ' + styles.tablet}
+            />
+            <Image
+              src={src.desktop}
+              alt="ape"
+              width={492}
+              height={662}
+              className={styles.aboutImage + ' ' + styles.desktop}
+            />
           </div>
         </div>
       </Container>

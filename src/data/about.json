@@ -6,8 +6,8 @@
   ],
   "src": {
     "mobile": "/images/about/mobile/ape-mobile.png",
-    "tablet": "",
-    "desktop": ""
+    "tablet": "/images/about/tablet/ape-tablet.png",
+    "desktop": "/images/about/desktop/ape-desktop.png"
   },
   "creepingLine": ["Destroy stereotypes", "HAVE NO LIMITS", "Break rules"]
 }
