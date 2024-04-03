@@ -5,7 +5,7 @@
   "description": "Yacht Ape is a collection of unique digital apes that you can own in NFT format",
   "src": {
     "mobile": "/images/hero/mobile/chimpanzee-mobile.png",
-    "tablet": "",
-    "desktop": ""
+    "tablet": "/images/hero/tablet/chimpanzee-tablet.png",
+    "desktop": "/images/hero/desktop/chimpanzee-desktop.png"
   }
 }
