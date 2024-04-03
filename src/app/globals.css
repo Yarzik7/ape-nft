@@ -59,9 +59,12 @@ button {
   }
 }
 
-.tabletImage {
+.tabletImage,
+.desktopImage {
   display: none;
+}
 
+.tabletImage {
   @media screen and (min-width: 768px) {
     display: block;
   }
@@ -72,8 +75,6 @@ button {
 }
 
 .desktopImage {
-  display: none;
-
   @media screen and (min-width: 1280px) {
     display: block;
   }
