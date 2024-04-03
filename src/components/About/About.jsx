@@ -3,6 +3,7 @@ import Container from '../Section/Container/Container';
 import Text from '../Text/Text';
 import Image from 'next/image';
 import CreepingLine from './CreepingLine/CreepingLine';
+import { clsx } from 'clsx';
 import styles from './About.module.css';
 
 import aboutData from '../../data/about.json';
@@ -16,7 +17,7 @@ const About = () => {
           <h2 className={styles.aboutTitle}>
             {title[0]}
             <span className={styles.aboutTitleAccent}>{title[1]}</span>
-            <span className={styles.aboutTitleAccent + ' ' + styles.aboutTitleApe}>{title[2]}</span>
+            <span className={clsx(styles.aboutTitleAccent, styles.aboutTitleApe)}>{title[2]}</span>
           </h2>
           <Text text={text[0]} className={styles.aboutTextInTitleBlock} />
         </div>
@@ -32,21 +33,21 @@ const About = () => {
               alt="ape"
               width={216}
               height={292}
-              className={styles.aboutImage + ' ' + styles.mobile}
+              className={clsx(styles.aboutImage, styles.mobile)}
             />
             <Image
               src={src.tablet}
               alt="ape"
               width={313}
               height={422}
-              className={styles.aboutImage + ' ' + styles.tablet}
+              className={clsx(styles.aboutImage, styles.tablet)}
             />
             <Image
               src={src.desktop}
               alt="ape"
               width={492}
               height={662}
-              className={styles.aboutImage + ' ' + styles.desktop}
+              className={clsx(styles.aboutImage, styles.desktop)}
             />
           </div>
         </div>
