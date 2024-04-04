@@ -11,6 +11,8 @@ import heroData from '../../data/hero.json';
 const { title, slogan, description, src, buttonCaption } = heroData;
 
 const Hero = () => {
+  const heroImageClass = styles.heroImage;
+
   return (
     <Section className={styles.heroSection} containerClassName={styles.heroContainer} withoutContainer>
       <div className={styles.heroContainerWrapper}>
@@ -30,21 +32,21 @@ const Hero = () => {
               alt="ape"
               width={216}
               height={284}
-              className={clsx(styles.heroImage, 'mobileImage')}
+              className={clsx(heroImageClass, 'mobileImage')}
             />
             <Image
               src={src.tablet}
               alt="ape"
               width={283}
               height={386}
-              className={clsx(styles.heroImage, 'tabletImage')}
+              className={clsx(heroImageClass, 'tabletImage')}
             />
             <Image
               src={src.desktop}
               alt="ape"
               width={463}
               height={612}
-              className={clsx(styles.heroImage, 'desktopImage')}
+              className={clsx(heroImageClass, 'desktopImage')}
             />
           </div>
 

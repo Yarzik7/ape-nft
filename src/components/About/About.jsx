@@ -10,6 +10,7 @@ import aboutData from '../../data/about.json';
 const { title, text, src, creepingLine } = aboutData;
 
 const About = () => {
+  const aboutImageClass = styles.aboutImage;
   return (
     <Section id="About" withoutContainer>
       <Container>
@@ -33,21 +34,21 @@ const About = () => {
               alt="ape"
               width={216}
               height={292}
-              className={clsx(styles.heroImage, 'mobileImage')}
+              className={clsx(aboutImageClass, 'mobileImage')}
             />
             <Image
               src={src.tablet}
               alt="ape"
               width={313}
               height={422}
-              className={clsx(styles.heroImage, 'tabletImage')}
+              className={clsx(aboutImageClass, 'tabletImage')}
             />
             <Image
               src={src.desktop}
               alt="ape"
               width={492}
               height={662}
-              className={clsx(styles.heroImage, 'desktopImage')}
+              className={clsx(aboutImageClass, 'desktopImage')}
             />
           </div>
         </div>
