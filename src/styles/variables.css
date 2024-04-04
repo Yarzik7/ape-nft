@@ -1,6 +1,7 @@
 :root {
   /* Colors */
   --accent-color: #dc3b5a;
+  --accent-color-opacity-scroll: rgba(220, 59, 90, 0.8);
   --primary-text-color: #ffffff;
   --secondary-text-color: #1e1e1e;
   --main-bg-color: #181818;

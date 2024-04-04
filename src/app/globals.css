@@ -38,6 +38,20 @@ body.is-open {
   overflow: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--primary-text-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: var(--border-radius);
+  background-color: var(--accent-color-opacity-scroll);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-color);
+}
+
 img {
   display: block;
 }
