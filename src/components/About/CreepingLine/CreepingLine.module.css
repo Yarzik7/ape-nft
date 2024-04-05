@@ -30,7 +30,7 @@
 
 @keyframes creepingLine {
   0% {
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
 
   100% {
