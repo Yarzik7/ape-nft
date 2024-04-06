@@ -10,7 +10,7 @@
 }
 
 .creepingLineText {
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .crossIconInCreepingLine {
