@@ -20,8 +20,8 @@ const Hero = () => {
           <div className={styles.heroTitleBox}>
             <p className={styles.heroSlogan}>{slogan[0]}</p>
             <h1 className={styles.heroTitle}>
-              <p>{title[0]}</p>
-              <p>{title[1]}</p>
+              <span>{title[0]}</span>
+              <span>{title[1]}</span>
             </h1>
             <p className={classNameJoin(styles.heroSlogan, styles.heroSloganWithPadding)}>{slogan[1]}</p>
           </div>

@@ -14,7 +14,9 @@ const MindMap = () => {
       <StagesSlider stagesData={stagesData} />
       <ul className={styles.stagesList}>
         {stagesData.map((stage, idx) => (
-          <MindMapCard key={idx} stageInfo={stage} />
+          <li key={idx}>
+            <MindMapCard stageInfo={stage} />
+          </li>
         ))}
       </ul>
     </Section>
