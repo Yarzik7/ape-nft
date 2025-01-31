@@ -4,7 +4,7 @@
 
    ```bash
    git clone https://github.com/Yarzik7/ape-nft.git
-   cd todo-list-frontend
+   cd ape-nft
    ```
 
 2. **Install the dependencies:**
