@@ -10,6 +10,7 @@
   transition: color var(--timing-function) var(--transition-duration);
 }
 
-.sliderButton:hover {
+.sliderButton:hover,
+.sliderButton:active {
   color: var(--accent-color);
 }
